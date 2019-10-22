@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="logo.png" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sliding Side Menu</title>
+  </head>
+  <body>
+    <div id="sideMenu" class="sidemenu" onmouseleave="closeMenu()">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+    <img
+      src="arrow.svg"
+      alt="Right Arrow"
+      id="expandArrow"
+      class="expand-arrow"
+      onmouseover="openMenu()"
+    />
+    <div id="main" class="main" onclick="closeMenu()">
+      <h1>Side Menu</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam a sunt
+        necessitatibus natus excepturi tenetur architecto ducimus ipsa, aliquid,
+        aperiam placeat asperiores alias quos, dolore ea inventore eos fuga
+        eius.
+      </p>
+    </div>
+  </body>
+</html>
